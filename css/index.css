@@ -203,6 +203,21 @@ i {
   background-color: #ffcb56;
   border-radius: 2rem;
 }
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    padding: 1rem;
+  }
+}
 
 #scrollToTopBtn {
   width: 2.5rem;
@@ -291,6 +306,19 @@ i {
   border-radius: 2rem;
   font-size: 1.75rem;
   font-weight: 600;
+}
+@media (max-height: 768px) {
+  .landing {
+    gap: 3rem;
+  }
+  .landing__content {
+    gap: 1rem;
+  }
+}
+@media (max-height: 480px) {
+  .landing {
+    gap: 1.5rem;
+  }
 }
 
 body {

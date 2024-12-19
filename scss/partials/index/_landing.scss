@@ -63,4 +63,17 @@
     font-size: vars.$fontLarge;
     font-weight: 600;
   }
+
+  // Responsive styles
+  @media (max-height: vars.$breakpoint-md) {
+    gap: vars.$xl;
+
+    &__content {
+      gap: vars.$s;
+    }
+  }
+
+  @media (max-height: vars.$breakpoint-sm) {
+    gap: vars.$m;
+  }
 }
