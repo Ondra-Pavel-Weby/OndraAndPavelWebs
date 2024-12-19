@@ -9,23 +9,22 @@
     <!-- 
         Zdroje:
             https://sass-lang.com/documentation/at-rules/mixin/
-            https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur
-            https://www.30secondsofcode.org/css/s/hover-underline-animation/
-            https://sass-lang.com/documentation/modules/color/
-            https://www.w3schools.com/howto/howto_css_style_hr.asp
-            https://www.geeksforgeeks.org/how-to-change-the-height-of-br-tag/
-            https://sass-lang.com/documentation/at-rules/control/if/
+            
     -->
 
     <!-- Style -->
     <link rel="stylesheet" href="css/index.css">
 
-    <!-- Font -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&display=swap"
         rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
     <!-- Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -34,10 +33,38 @@
 
 <body>
     <header>
-
+        <nav class="navbar">
+            <a href="#" class="navbar__logo">Ondra & Pavel Weby</a>
+            <ul class="navbar__links">
+                <li class="navbar__link"><a href="#">Domů</a></li>
+                <li class="navbar__link"><a href="#">O nás</a></li>
+                <li class="navbar__link"><a href="#">Naše práce</a></li>
+                <li class="navbar__link"><a href="#">Ceník</a></li>
+                <li class="navbar__link navbar__link-btn"><a href="#">Kontaktujte nás</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-
+        <section class="landing">
+            <div class="landing__content">
+                <h1 class="landing__title">Moderní a kvalitní weby na míru</h1>
+                <ul class="landing__features">
+                    <li class="landing__feature">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>Levně</p>
+                    </li>
+                    <li class="landing__feature">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>Rychle</p>
+                    </li>
+                    <li class="landing__feature">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>Jednoduše</p>
+                    </li>
+                </ul>
+            </div>
+            <a href="" class="landing__action-btn">Chci vidět více!</a>
+        </section>
     </main>
     <footer>
 

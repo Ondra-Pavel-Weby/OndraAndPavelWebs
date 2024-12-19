@@ -1,8 +1,39 @@
 // --- Colors ---
 
-$bgCol: #f4f9f8;
-$lightCol: #ffffff;
-$darkCol: #120e00;
-$primLightCol: #02cecb;
-$primDarkCol: #06937f;
-$secCol: #fdc100;
+$light: #ffffff;
+$dark: #000000;
+$primary: #2b8eff;
+$secondary: #ffcb56;
+$accent: #2d334a;
+
+// --- Spacing, Radius ---
+
+$xs: 0.5rem;
+$s: 1rem;
+$m: 1.5rem;
+$l: 2rem;
+$xl: 3rem;
+$xxl: 4rem;
+
+// --- Line-weight ---
+
+$borderWeight: 1px;
+
+// --- Font size ---
+
+$fontSmall: 0.95rem;
+$fontMedium: 1.15rem;
+$fontLarge: 1.75rem;
+
+// --- Font Families ---
+
+$fontHeading: 'Sora', serif;
+$fontText: 'Lexend', sans-serif;
+
+// --- Transition ---
+
+$transitionBasic: all 0.3s ease-in-out;
+
+// --- Heights ---
+
+$navbarHeight: 6.25rem;

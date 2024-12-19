@@ -1,4 +1,5 @@
 @use 'reset';
+@use '../variables' as vars;
 
 @keyframes fadeIn {
   from {
@@ -10,7 +11,23 @@
 }
 
 body {
-  font-family: Lexend, sans-serif;
+  font-family: vars.$fontText;
 
-  animation: fadeIn 1s ease-in;
+  // animation: fadeIn 1s ease-in;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: vars.$fontHeading;
+  color: vars.$primary;
+}
+
+p,
+a,
+i {
+  color: vars.$accent;
 }

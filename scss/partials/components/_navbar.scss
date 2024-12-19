@@ -3,5 +3,46 @@
 
 @use 'sass:color';
 
-.mainNavigation {
+.navbar {
+  width: 100%;
+  height: vars.$navbarHeight;
+
+  padding: vars.$xl;
+
+  @include mixins.flex(row, space-between, center);
+
+  border-bottom: vars.$borderWeight solid vars.$accent;
+
+  &__logo {
+    font-size: vars.$fontLarge;
+    font-family: vars.$fontHeading;
+  }
+
+  &__links {
+    @include mixins.flex(row, center, center);
+
+    gap: vars.$m;
+  }
+
+  &__link {
+    font-size: vars.$fontMedium;
+
+    a {
+      transition: vars.$transitionBasic;
+
+      &:hover {
+        color: vars.$primary;
+      }
+    }
+
+    &-btn {
+      padding: vars.$s;
+
+      @include mixins.flex(row, center, center);
+
+      background-color: vars.$secondary;
+
+      border-radius: vars.$l;
+    }
+  }
 }

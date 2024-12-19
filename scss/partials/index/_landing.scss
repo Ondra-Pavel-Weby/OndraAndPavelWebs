@@ -2,3 +2,65 @@
 @use '../mixins' as mixins;
 
 @use 'sass:color';
+
+.landing {
+  width: 100%;
+  height: calc(100vh - vars.$navbarHeight);
+
+  padding: vars.$l;
+
+  @include mixins.flex(column, center, center);
+
+  gap: calc(2 * vars.$xxl);
+
+  &__content {
+    @include mixins.flex(column, center, center);
+
+    gap: vars.$l;
+  }
+
+  &__title {
+    font-size: calc(vars.$fontLarge * 3.5);
+    font-weight: 700;
+
+    background: rgb(44, 103, 242);
+    background: linear-gradient(
+      36deg,
+      rgba(44, 103, 242, 1) 0%,
+      rgba(98, 207, 244, 1) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__features {
+    @include mixins.flex(row, center, center);
+
+    gap: vars.$l;
+  }
+
+  &__feature {
+    @include mixins.flex(row, center, center);
+
+    gap: vars.$xs;
+
+    p,
+    i {
+      font-size: vars.$fontLarge;
+    }
+  }
+
+  &__action-btn {
+    width: 18.75rem;
+    height: 5.625rem;
+
+    @include mixins.flex(row, center, center);
+
+    background-color: vars.$secondary;
+
+    border-radius: vars.$l;
+
+    font-size: vars.$fontLarge;
+    font-weight: 600;
+  }
+}
