@@ -24,7 +24,9 @@
   border: none;
 
   background-color: vars.$primary;
-  color: vars.$light;
+  i {
+    color: vars.$light;
+  }
 
   cursor: pointer;
 

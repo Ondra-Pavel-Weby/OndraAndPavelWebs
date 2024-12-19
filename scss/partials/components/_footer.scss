@@ -1,5 +1,79 @@
 @use '../variables' as vars;
 @use '../mixins' as mixins;
 
-footer {
+.footer {
+  width: 100%;
+  height: 26.25rem;
+
+  @include mixins.flex(column, center, center);
+
+  &__content {
+    height: calc(100% - vars.$navbarHeight);
+    width: 100%;
+
+    @include mixins.flex(row, space-between, center);
+
+    padding: vars.$xl;
+
+    border-top: vars.$borderWeight solid vars.$accent;
+  }
+
+  &__logo {
+    @include mixins.flex(column, center, start);
+
+    gap: vars.$s;
+
+    &-title {
+      font-size: vars.$fontLarge;
+      font-family: vars.$fontHeading;
+    }
+
+    &-subtitle {
+      font-size: vars.$fontMedium;
+      font-weight: 300;
+    }
+  }
+
+  &__navigation {
+    @include mixins.flex(column, center, center);
+
+    gap: vars.$s;
+
+    h2 {
+      font-size: vars.$fontMedium;
+      font-weight: 700;
+    }
+  }
+
+  &__links {
+    @include mixins.flex(column, center, start);
+
+    gap: vars.$s;
+
+    a {
+      font-size: vars.$fontMedium;
+
+      transition: vars.$transitionBasic;
+
+      &:hover {
+        color: vars.$primary;
+      }
+    }
+  }
+
+  &__rights {
+    height: vars.$navbarHeight;
+    width: 100%;
+
+    @include mixins.flex(row, center, center);
+
+    background-color: vars.$accent;
+
+    p {
+      color: vars.$light;
+
+      font-size: vars.$fontMedium;
+      font-weight: 300;
+    }
+  }
 }
